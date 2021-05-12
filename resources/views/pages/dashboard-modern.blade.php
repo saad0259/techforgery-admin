@@ -213,7 +213,9 @@
       </div>
    </div>
 </div>
-@include('pages.intro')
+<!-- {{--@include('pages.intro')--}} Comment this part so intro does not show everytime -->
+
+
 @endsection
 
 {{-- vendor scripts --}}
