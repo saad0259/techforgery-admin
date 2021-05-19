@@ -4,6 +4,7 @@ return [
     "Modern"=> "Modern",
     "eCommerce"=> "eCommerce",
     "Analytics"=> "Analytics",
+    "Saad"=>"Saad",  //Enter a definition for the name
     "Templates"=> "Templates",
     "Vertical"=> "Vertical",
     "Modern Menu"=> "Modern  Menu",

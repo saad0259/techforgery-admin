@@ -7,7 +7,7 @@
       "class": "collapsible-header waves-effect waves-cyan",
       "slug": "dashboard",
       "icon": "settings_input_svideo",
-      "tag": "3",
+      "tag": "8",
       "tagcustom": "badge pill orange float-right mr-10",
       "submenu": [
         {
@@ -16,12 +16,25 @@
           "i18n": "Modern",
           "slug": "dashboard-modern"
         },
+        
         {
           "url": "ecommerce",
           "name": "eCommerce",
           "i18n": "eCommerce",
           "slug": "dashboard-ecommerce"
         },
+
+
+
+        {
+          "url": "/login", 
+          "name": "Saad",
+          "i18n": "eCommerce",
+          "slug": "dashboard-ecommerce"
+        },
+
+
+        
         {
           "url": "analytics",
           "name": "Analytics",
