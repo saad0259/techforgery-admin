@@ -16,8 +16,7 @@ class ServicesController extends Controller
     {
         
 
-        $pageConfigs = ['bodyCustomClass' => 'app-page'];
-        return view('services.index', ['pageConfigs' => $pageConfigs]);
+    return view('services.index');
     }
 
     /**
@@ -27,8 +26,8 @@ class ServicesController extends Controller
      */
     public function create()
     {
-        $pageConfigs = ['bodyCustomClass' => 'app-page'];
-        return view('services.create', ['pageConfigs' => $pageConfigs]);
+      
+        return view('services.create');
     }
 
     /**
