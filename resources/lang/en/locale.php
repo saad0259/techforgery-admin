@@ -5,6 +5,11 @@ return [
     "eCommerce"=> "eCommerce",
     "Analytics"=> "Analytics",
     "Saad"=>"Saad",  //Enter a definition for the name
+    "Services"=>"Services",
+    "View All"=>"View All",
+    "Add New"=>"Add New",
+
+
     "Templates"=> "Templates",
     "Vertical"=> "Vertical",
     "Modern Menu"=> "Modern  Menu",

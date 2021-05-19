@@ -44,6 +44,33 @@
       ]
     },
     {
+      "url": "javascript:void(0)",
+      "name": "Services",
+      "i18n": "Services",
+      "class": "collapsible-header waves-effect waves-cyan",
+      "slug": "services",
+      "icon": "add_shopping_cart",
+      "tag": "99",
+      "tagcustom": "badge pill orange float-right mr-10",
+      "submenu": [
+        {
+          "url": "/somelink",
+          "name": "View All",
+          "i18n": "View All",
+          "slug": "view-all"
+        },
+        
+        {
+          "url": "/somelink",
+          "name": "Add New",
+          "i18n": "Add New",
+          "slug": "add-new"
+        }
+
+      
+      ]
+    },
+    {
       "navheader": "Applications",
       "icon": "more_horiz"
     },
