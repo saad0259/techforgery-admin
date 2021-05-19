@@ -42,7 +42,7 @@
          <!-- Total Transaction -->
          <div class="card">
             <div class="card-content">
-               <h4 class="card-title mb-0">Total Transaction <i class="material-icons float-right">more_vert</i></h4>
+               <h4 class="card-title mb-0">Rehman ali <i class="material-icons float-right">more_vert</i></h4>
                <p class="medium-small">This month transaction</p>
                <div class="total-transaction-container">
                   <div id="total-transaction-line-chart" class="total-transaction-shadow"></div>
