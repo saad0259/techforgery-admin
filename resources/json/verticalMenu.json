@@ -27,7 +27,7 @@
 
 
         {
-          "url": "/login", 
+          "url": "/Login", 
           "name": "Saad",
           "i18n": "eCommerce",
           "slug": "dashboard-ecommerce"
@@ -50,14 +50,14 @@
       "class": "collapsible-header waves-effect waves-cyan",
       "slug": "services",
       "icon": "add_shopping_cart",
-      "tag": "99",
+  
       "tagcustom": "badge pill orange float-right mr-10",
       "submenu": [
         {
-          "url": "/somelink",
+          "url": "/services",
           "name": "View All",
-          "i18n": "View All",
-          "slug": "view-all"
+          "i18n": "Analytics",
+          "slug": "dashboard-analytics"
         },
         
         {
