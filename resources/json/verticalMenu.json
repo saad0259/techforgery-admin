@@ -61,7 +61,7 @@
         },
         
         {
-          "url": "/somelink",
+          "url": "/services/create",
           "name": "Add New",
           "i18n": "Add New",
           "slug": "add-new"

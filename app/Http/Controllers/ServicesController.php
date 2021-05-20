@@ -14,9 +14,11 @@ class ServicesController extends Controller
      */
     public function index()
     {
-        
+        $services=services::paginate(10);
 
-    return view('services.index');
+        return view('services.index',compact('services'));
+
+    
     }
 
     /**
@@ -38,18 +40,20 @@ class ServicesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        services::create($request->all());
+        return redirect('/services');
     }
 
     /**
      * Display the specified resource.
-     *
+     * @param int  $id
      * @param  \App\Models\Services  $services
      * @return \Illuminate\Http\Response
      */
-    public function show(Services $services)
+    public function show($id)
     {
-        //
+        $services=services::findOrFail($id);
+        return view('services.show',compact('services'));
     }
 
     /**
