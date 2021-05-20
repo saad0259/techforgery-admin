@@ -174,4 +174,6 @@ Route::get('/charts-sparklines', [ChartController::class, 'sparklines']);
 // locale route
 Route::get('lang/{locale}', [LanguageController::class, 'swap']);
 
+
+// Custom Routes
 Route::resource('/services','App\Http\Controllers\ServicesController');
