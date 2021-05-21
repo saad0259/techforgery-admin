@@ -36,12 +36,17 @@
       <h4 class="card-title text-center" style="font-size:25px;">Add New Service</h4>
 
   
-        {!! Form::open(['method'=>'POST', 'action'=>'App\Http\Controllers\ServicesController@store' ,'class'=>'forms-sample row', ]) !!}
+
+        {!! Form::model($services,['method'=>'Patch', 'action'=>['App\Http\Controllers\ServicesController@update',$services->id] ,'class'=>'forms-sample row', ]) !!}
+
+
+       
+        {{-- <input type="hidden" name="_method" value="PUT"> --}}
 
         <div class="form-group col-md-6">
 
-          {!! Form::label('name','Service Name') !!}
-          {!! Form::text('name', null,['class'=>'form-control', 'placeholder' => 'Write Service Name', 'required' => 'required'] ) !!}
+          {!! Form::label('name','Item Name') !!}
+          {!! Form::text('name', null,['class'=>'form-control', 'placeholder' => 'e.g. Rice, Mango', 'required' => 'required'] ) !!}
 
         
         </div>
@@ -127,11 +132,20 @@
 
         <div class="form-group col-md-12">
 
-          {!! Form::submit('Add', ['class'=>'btn btn-success mr-2']) !!}
-  
+          {!! Form::submit('Change', ['class'=>'btn btn-success mr-2']) !!}
+          
         </div>
 
       {!! Form::close() !!}
+      </form>
+        {!! Form::open(['method'=>'DELETE', 'action'=>['App\Http\Controllers\ServicesController@destroy',$services->id] ]) !!}
+
+        
+
+        {!! Form::submit('Delete', ['class'=>'btn btn-danger mr-2']) !!}
+
+        {!! Form::close() !!}
+
    
     </div>
   </div>

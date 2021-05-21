@@ -58,35 +58,43 @@ class ServicesController extends Controller
 
     /**
      * Show the form for editing the specified resource.
-     *
+     * @param int  $id
      * @param  \App\Models\Services  $services
      * @return \Illuminate\Http\Response
      */
-    public function edit(Services $services)
+    public function edit($id)
     {
-        //
+        $services=services::findOrFail($id);
+        
+        return view('services.edit',compact('services'));
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Services  $services
+     *  @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Services $services)
+    public function update(Request $request, $id)
     {
-        //
+        $services=services::findOrFail($id);
+        $services->update($request->all());
+        return view('services.show',compact('services'));
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Services  $services
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Services $services)
+    public function destroy($id)
     {
-        //
+        $services=services::findOrFail($id);
+        $services->delete();
+        return redirect('/services');
     }
+
+
 }

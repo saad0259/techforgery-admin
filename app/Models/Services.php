@@ -11,5 +11,7 @@ class Services extends Model
 
     protected $fillable = ['name','status','created_from','description','price',
     'currency','purchase','edited_purchase','creatted_by','Offered_by','date'];
+
+    protected $dates=['deleted_at'];
 }
 
