@@ -3,7 +3,7 @@
   data-open="click" data-menu="horizontal-menu" data-col="2-columns">
 
   <!-- BEGIN: Header-->
-  <header class="page-topbar" id="header">
+  <header class="page-topbar flex-shrink-0 " id="header">
     @include('panels.horizontalNavbar')
   </header>
   <!-- BEGIN: SideNav-->
